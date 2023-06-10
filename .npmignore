@@ -1,0 +1,7 @@
+.github/
+public
+src/
+.*
+ice.config.mts
+.ice/
+tsconfig.json

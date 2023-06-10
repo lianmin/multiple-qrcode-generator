@@ -1,7 +1,10 @@
 {
   "name": "multiple-qrcode-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "批量二维码生成器",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@alifd/layout": "^2.0.12",
     "@alifd/next": "^1.26.19",
