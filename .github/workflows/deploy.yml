@@ -17,19 +17,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
           ref: main
+
       - run: yarn install
       - run: npm run build
-      - run: |
-          rm -rf .git
-          cd ./dist
-          git config --global user.name "lianmin"
-          git config --global user.email "406400939@qq.com"
-          git add .
-          git commit -m "Sync to GitHub Pages"
-          git push --fore --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./dist
