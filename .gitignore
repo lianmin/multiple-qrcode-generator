@@ -25,6 +25,8 @@ package-lock.json
 
 # tmp
 .ice
+.idea
+.vscode
 
 # cache
 .eslintcache
