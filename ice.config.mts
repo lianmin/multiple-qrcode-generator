@@ -6,6 +6,11 @@ export default defineConfig(() => ({
   plugins: [jsxPlus()],
   publicPath: '/multiple-qrcode-generator/',
   outputDir: 'docs',
+  routes: {
+    defineRoutes: (route) => {
+      route('/multiple-qrcode-generator', 'index.tsx');
+    },
+  },
   server: {
     onDemand: true,
     format: 'esm',
