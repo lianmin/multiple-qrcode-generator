@@ -14,7 +14,7 @@ export default function Home() {
       const { text } = values;
       if (text) {
         const arr = text.split(/\n|,|\s/);
-        let tail;
+        let tail: string[] = [];
 
         const quotient = arr.length % 5;
 
@@ -63,7 +63,7 @@ export default function Home() {
                 <Balloon.Tooltip
                   x-if={text}
                   align="t"
-                  trigger={<Panel className={styles.panel} value={text} text={index + 1} />}
+                  trigger={<Panel className={styles.panel} value={text} text={`${index + 1}`} />}
                   triggerType="hover"
                 >
                   <Text type="body2">{text}</Text>
