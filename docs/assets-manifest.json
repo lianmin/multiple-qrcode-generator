@@ -11,12 +11,12 @@
     ]
   },
   "pages": {
-    "index": [
+    "multiple-qrcode-generator-index": [
       "js/75fc9c18.js",
       "css/244.css",
       "js/244.js",
-      "css/p_index.css",
-      "js/p_index.js"
+      "css/p_multiple-qrcode-generator-index.css",
+      "js/p_multiple-qrcode-generator-index.js"
     ]
   },
   "assets": {}
