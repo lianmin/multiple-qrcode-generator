@@ -1,0 +1,17 @@
+.textarea {
+  width: 100%;
+}
+
+.grid {
+  background: var(--color-line1-3);
+  border: 1px solid var(--color-line1-3);
+}
+
+.gridCell {
+  background: #fff;
+  height: 230px;
+}
+
+.panel {
+  cursor: pointer;
+}
