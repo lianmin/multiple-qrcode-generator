@@ -25,8 +25,9 @@ jobs:
           ref: main
       - run: yarn install
       - run: npm run build
-      - run: cd ./dist
       - run: |
+          rm -rf .git
+          cd ./dist
           git config --global user.name "lianmin"
           git config --global user.email "406400939@qq.com"
           git add .
