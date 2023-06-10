@@ -1,5 +1,5 @@
 {
-  "publicPath": "/multiple-qrcode-generator/dist/",
+  "publicPath": "/multiple-qrcode-generator/",
   "entries": {
     "main": [
       "js/framework.js",
